@@ -1,5 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Rambla:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --primary: #4e7081;
+    --off-white: #f4f4f4;
+    --secondary: #36383c;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body {
+    font-family: 'Rambla', sans-serif;
+    line-height: 1.4;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    min-width: 360px;
+    padding: 1rem;
+}
+
+.bg-off-white {
+    background-color: var(--off-white);
+    color: var(--secondary);
+}
+
+.bg-vulcan-blue {
+    background-color: var(--primary);
+    color: var(--off-white);
+}
+
+.bg-secondary-color {
+    background-color: var(--secondary);
+    color: var(--off-white);
+}
+
+.btn {
+    outline: none;
+    padding: 0.75rem 1rem;
+    display: block;
+    border-radius: 0.5rem;
+    border: 1px solid var(--secondary);
+}
+
+.btn-vulcan-blue {
+    background-color: var(--primary);
+    color: var(--off-white);
+}
+
+.hero {
+    text-align: center;
+    min-height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.main > .container {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main textarea {
+    width: 100%;
+    overflow: scroll;
+    display: block;
+    font-family: inherit;
+    font-size: 1.3rem;
+    font-style: italic;
+    padding: 0.5rem 0.75rem;
+    color: #000;
+    border-radius: 0.5rem;
+}
+
+.btn-translate {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.main h3 {
+    margin: 0.5rem 0;
+    font-style: italic;
+}
+
+.main textarea.vulcan-text {
+    min-height: 15vh;
+}
+
+textarea.user-text {
+    min-height: 20vh;
+    margin-bottom: 1rem;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    min-height: 20vh;
+    text-align: center;
+}
+
+
+.footer .footer-head {
+    font-weight: bold;
+}
+
+.footer .footer-lead {
+    font-size: 0.75rem;
+    margin: 0.5rem 0;
+    text-align: center;
 }
