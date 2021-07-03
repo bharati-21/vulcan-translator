@@ -5,8 +5,33 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Vulcan Translator</title>
+
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        
+        <header class="hero bg-vulcan-blue">
+            <div class="container">
+                <h1 class="hero-title">Vulcan Translator</h1>
+            </div>
+        </header>
+        <main class="main bg-off-white">
+            <div class="container">
+                <textarea name="user-text" id="user-text" class="user-text" placeholder="Put your message here which you want to convert to Vulcan language"></textarea>
+
+                <button class="btn btn-vulcan-blue btn-translate" id="btn-translate">Translate to Vulcan</button>
+
+                <h3>Translation will come here 👇</h3>
+                <textarea name="vulcan-text" id="vulcan-text" class="vulcan-text"></textarea>
+            </div>
+        </main>
+        <footer class="footer bg-vulcan-blue">
+            <div class="container">
+                <div class="footer-head">about</div>
+                <p class="footer-lead">
+                   The Vulcan language was spoken by the Vulcans of the planet Vulcan. The Vulcans are fictional extraterrestrial humanoid species in the Star Trek franchise who originate from the planet Vulcan. In the Star Trek television series and movies, they are noted for their attempt to live by logic and reason with no interference from emotion
+                </p>
+            </div>
+        </footer>
+        <script src="app.js"></script>
     </body>
 </html>
