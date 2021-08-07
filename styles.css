@@ -48,6 +48,13 @@ body {
     border-radius: 0.5rem;
     border: 1px solid var(--secondary);
     margin: 0 auto;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.1);
 }
 
 .btn-vulcan-blue {
