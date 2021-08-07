@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Rambla:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {
-    --primary: #4e7081;
+    /* --primary: #4e7081; */
+    --primary: steelblue;
     --off-white: #f4f4f4;
     --secondary: #36383c;
 }
@@ -16,13 +17,12 @@ body {
     font-family: 'Rambla', sans-serif;
     line-height: 1.4;
     min-height: 100vh;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .container {
     max-width: 900px;
     margin: auto;
-    min-width: 360px;
     padding: 1rem;
 }
 
@@ -47,6 +47,7 @@ body {
     display: block;
     border-radius: 0.5rem;
     border: 1px solid var(--secondary);
+    margin: 0 auto;
 }
 
 .btn-vulcan-blue {
@@ -61,7 +62,9 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 2rem;
 }
+
 
 
 .main > .container {
@@ -92,7 +95,7 @@ body {
 }
 
 .main h3 {
-    margin: 0.5rem 0;
+    margin: 1.5rem auto 0.5rem;
     font-style: italic;
 }
 
@@ -116,12 +119,18 @@ textarea.user-text {
 }
 
 
+
+.spock-image {
+    width: 50%;
+}
+
 .footer .footer-head {
     font-weight: bold;
+    font-size: 1.1rem;
 }
 
 .footer .footer-lead {
-    font-size: 0.75rem;
+    font-size: 0.9rem;
     margin: 0.5rem 0;
     text-align: center;
 }
