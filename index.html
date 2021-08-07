@@ -16,14 +16,14 @@
             </div>
         </header>
         <main class="main bg-off-white">
-            <div class="container">
-                <textarea name="user-text" id="user-text" class="user-text" placeholder="Put your message here which you want to convert to Vulcan language"></textarea>
+            <form class="container">
+                <textarea name="user-text" id="user-text" class="user-text" placeholder="Put your message here which you want to convert to Vulcan language" required></textarea>
 
-                <button class="btn btn-vulcan-blue btn-translate" id="btn-translate">Translate to Vulcan</button>
+                <input type="submit" class="btn btn-vulcan-blue btn-translate" id="btn-translate" value="Translate to Vulcan">
 
                 <h3>Translation will come here 👇</h3>
-                <textarea name="vulcan-text" id="vulcan-text" class="vulcan-text"></textarea>
-            </div>
+                <textarea name="vulcan-text" id="vulcan-text" class="vulcan-text" readonly></textarea>
+            </form>
         </main>
         <footer class="footer bg-vulcan-blue">
             <div class="footer-container">

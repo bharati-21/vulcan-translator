@@ -5,14 +5,22 @@ var vulcanText = document.querySelector('.vulcan-text');
 btnTranslate.addEventListener('click', translateText);
 
 function translateText(e) {
+    e.preventDefault();
+
     var text = userText.value;
 
     fetch(getTranslationURL(text))
-    .then(res => res.json())
-    .then(json => {
-        vulcanText.innerHTML = json.contents.translated;
+    .then(res => {
+        console.log(res);
+        return res.json()
     })
-    .catch(err => console.log("Error occured", err));
+    .then(json => {
+        vulcanText.innerText = json.contents.translated;
+    })
+    .catch(err => {
+        console.log("Error occurred:", err)
+        alert('Something unexpected happened. Please try after sometime!');
+    });
 }
 
 function getTranslationURL(text) {
