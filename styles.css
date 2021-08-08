@@ -72,7 +72,9 @@ body {
     padding: 2rem;
 }
 
-
+.spock-image {
+    width: 50%;
+}
 
 .main > .container {
     min-height: 70vh;
@@ -125,19 +127,35 @@ textarea.user-text {
     text-align: center;
 }
 
-
-
-.spock-image {
-    width: 50%;
-}
-
 .footer .footer-head {
     font-weight: bold;
     font-size: 1.1rem;
 }
 
 .footer .footer-lead {
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin: 0.5rem 0;
     text-align: center;
+}
+
+.footer .social-links {
+    list-style: none;
+    margin: 1.5rem 0 0 0;
+}
+
+.footer .social-links li {
+    display: inline-block;
+    margin: 0.5rem;
+}
+
+.footer .social-links li a {
+    color: #333;
+    font-weight: bold;
+    padding: 0.5rem 0.75rem;
+    text-decoration: none;
+}
+
+.footer .social-links li a:hover {
+    background-color:#f4f4f4;
+    border-radius: 0.5rem;
 }
