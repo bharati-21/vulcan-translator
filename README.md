@@ -1,7 +1,7 @@
 # VULCAN TRANSLATOR
  A simple, fun translator that converts plain English into the Star Trek's famous Vulcan language.
  
- ### This application translates English to minion lamguage using a translator API.
+ ### This application translates English to the famous Star Trek's Vulcan lamguage using a translator API.
 Live demo of the application: https://bharati-vulcan-translator.netlify.app/
 <hr />
 
